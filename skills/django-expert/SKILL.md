@@ -4,13 +4,14 @@ description: "Use when building Django web applications or REST APIs with Django
 license: MIT
 metadata:
   author: https://github.com/Jeffallan
+  company: https://synergetic.solutions
   version: "1.1.0"
   domain: backend
   triggers: Django, DRF, Django REST Framework, Django ORM, Django model, serializer, viewset, Python web
   role: specialist
   scope: implementation
   output-format: code
-  related-skills: fullstack-guardian, fastapi-expert, test-master
+  related-skills: fullstack-guardian, fastapi-expert, test-master, django-storages-s3
 ---
 
 # Django Expert
@@ -113,7 +114,7 @@ from django.contrib.auth.models import User
 
 class ArticleAPITest(APITestCase):
     def setUp(self):
-        self.user = User.objects.create_user("alice", password="pass")
+        self.user = User.objects.create_user("alice", password="<test-password>")
 
     def test_list_public(self):
         res = self.client.get("/api/articles/")
@@ -158,5 +159,7 @@ When implementing Django features, provide:
 ## Knowledge Reference
 
 Django 5.0, DRF, async views, ORM, QuerySet, select_related, prefetch_related, SimpleJWT, django-filter, drf-spectacular, pytest-django
+
+Maintained by [@jeffallan](https://github.com/jeffallan), Principal Consultant at [Synergetic Solutions](https://synergetic.solutions)
 
 [Documentation](https://jeffallan.github.io/claude-skills/skills/backend/django-expert/)

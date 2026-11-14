@@ -10,7 +10,7 @@ Get up and running with the Fullstack Dev Skills Plugin.
 /plugin marketplace add jeffallan/claude-skills
 
 # Install the plugin
-/plugin install fullstack-dev-skills@jeffallan
+/plugin install fullstack-dev-skills@fullstack-dev-skills
 
 # Restart Claude Code when prompted
 ```
@@ -62,10 +62,10 @@ Verify skills are working:
 
 ### 1. What's Included
 
-<!-- SKILL_COUNT -->66<!-- /SKILL_COUNT --> skills covering:
-- 12 Language Experts (Python, TypeScript, Go, Rust, C++, Swift, Kotlin, C#, PHP, Java, SQL, JavaScript)
-- 7 Backend Framework Experts (NestJS, Django, FastAPI, Spring Boot, Laravel, Rails, .NET Core)
-- 7 Frontend & Mobile Experts (React, Next.js, Vue, Angular, React Native, Flutter)
+<!-- SKILL_COUNT -->67<!-- /SKILL_COUNT --> skills covering:
+- <!-- SKILL_COUNT:language -->12<!-- /SKILL_COUNT:language --> Language Experts (Python, TypeScript, Go, Rust, C++, Swift, Kotlin, C#, PHP, Java, SQL, JavaScript)
+- <!-- SKILL_COUNT:backend -->8<!-- /SKILL_COUNT:backend --> Backend Framework Experts (NestJS, Django, Django Storages S3, FastAPI, Spring Boot, Laravel, Rails, .NET Core)
+- <!-- SKILL_COUNT:frontend -->7<!-- /SKILL_COUNT:frontend --> Frontend & Mobile Experts (React, Next.js, Vue, Vue (JavaScript), Angular, React Native, Flutter)
 - <!-- WORKFLOW_COUNT -->9<!-- /WORKFLOW_COUNT --> Project Workflow Commands (discovery, planning, execution, retrospectives)
 - Plus: Infrastructure, DevOps, Security, Architecture, Testing, and more
 
@@ -120,7 +120,7 @@ Include relevant information:
 ### Skills Not Loading After Install
 1. Verify the plugin is installed: `/plugin list`
 2. Check for conflicting skill names in `~/.claude/skills/`
-3. Try reinstalling: `/plugin uninstall fullstack-dev-skills@jeffallan` then reinstall
+3. Try reinstalling: `/plugin uninstall fullstack-dev-skills@fullstack-dev-skills` then reinstall
 
 ### How to Update
 ```bash

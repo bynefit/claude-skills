@@ -4,6 +4,7 @@ description: Designs and implements production-grade RAG systems by chunking doc
 license: MIT
 metadata:
   author: https://github.com/Jeffallan
+  company: https://synergetic.solutions
   version: "1.1.0"
   domain: data-ml
   triggers: RAG, retrieval-augmented generation, vector search, embeddings, semantic search, vector database, document retrieval, knowledge base, context retrieval, similarity search
@@ -128,10 +129,14 @@ def hybrid_search(query: str, tenant_id: str, top_k: int = 20) -> list:
 
 ### 4. Reranking Top-K Results
 
+Load provider API keys from environment variables or a secrets manager; never commit them to source code.
+
 ```python
+import os
+
 import cohere
 
-co = cohere.Client("YOUR_API_KEY")
+co = cohere.Client(os.environ["COHERE_API_KEY"])
 
 def rerank(query: str, results: list, top_n: int = 5) -> list:
     docs = [r.payload.get("text", "") for r in results]
@@ -192,5 +197,7 @@ When designing RAG architecture, deliver:
 3. Chunking strategy with examples and rationale
 4. Retrieval pipeline design (query → results flow)
 5. Evaluation plan with metrics, benchmarks, and pass/fail thresholds
+
+Maintained by [@jeffallan](https://github.com/jeffallan), Principal Consultant at [Synergetic Solutions](https://synergetic.solutions)
 
 [Documentation](https://jeffallan.github.io/claude-skills/skills/data-ml/rag-architect/)

@@ -5,19 +5,24 @@
   },
   "metadata": {
     "description": "Comprehensive skill pack for full-stack developers covering frameworks, workflows, and security",
-    "version": "0.4.14"
+    "version": "0.4.20"
   },
   "plugins": [
     {
       "name": "fullstack-dev-skills",
-      "source": "./",
-      "description": "66 specialized skills for full-stack development: 12 language experts (Python, TypeScript, Go, Rust, C++, Swift, Kotlin, C#, PHP, Java, SQL, JavaScript), 10 backend frameworks, 6 frontend/mobile, plus infrastructure, DevOps, security, and testing skills. Includes 9 project workflow commands for epic planning, discovery, execution, and retrospectives.",
-      "version": "0.4.14",
+      "source": {
+        "source": "github",
+        "repo": "jeffallan/claude-skills",
+        "ref": "plugin"
+      },
+      "description": "67 specialized skills for full-stack development: 12 language experts (Python, TypeScript, Go, Rust, C++, Swift, Kotlin, C#, PHP, Java, SQL, JavaScript), 8 backend frameworks, 7 frontend/mobile, plus infrastructure, DevOps, security, and testing skills. Includes 9 project workflow commands for epic planning, discovery, execution, and retrospectives.",
+      "version": "0.4.20",
       "author": {
         "name": "jeffallan",
-        "email": "github@jeffallan"
+        "email": "jeff@synergetic.solutions",
+        "url": "https://github.com/jeffallan"
       },
-      "homepage": "https://github.com/jeffallan/claude-skills",
+      "homepage": "https://jeffallan.github.io/claude-skills/",
       "repository": "https://github.com/jeffallan/claude-skills",
       "license": "MIT",
       "keywords": [
@@ -80,8 +85,7 @@
         "testing",
         "workflows"
       ],
-      "skills": "./skills/",
-      "commands": "./commands/"
+      "skills": "./skills/"
     }
   ]
 }

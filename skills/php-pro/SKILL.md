@@ -4,6 +4,7 @@ description: Use when building PHP applications with modern PHP 8.3+ features, L
 license: MIT
 metadata:
   author: https://github.com/Jeffallan
+  company: https://synergetic.solutions
   version: "1.1.0"
   domain: language
   triggers: PHP, Laravel, Symfony, Composer, PHPStan, PSR, PHP API, Eloquent, Doctrine
@@ -151,7 +152,7 @@ final class UserServiceTest extends TestCase
 
     public function testCreateHashesPassword(): void
     {
-        $dto  = new CreateUserDTO('Alice', 'alice@example.com', 'secret');
+        $dto  = new CreateUserDTO('Alice', 'alice@example.com', '<test-password>');
         $user = new User(['name' => 'Alice', 'email' => 'alice@example.com']);
 
         $this->users
@@ -204,5 +205,7 @@ When implementing a feature, deliver in this order:
 ## Knowledge Reference
 
 PHP 8.3+, Laravel 11, Symfony 7, Composer, PHPStan, Psalm, PHPUnit, Pest, Eloquent ORM, Doctrine, PSR standards, Swoole, ReactPHP, Redis, MySQL/PostgreSQL, REST/GraphQL APIs
+
+Maintained by [@jeffallan](https://github.com/jeffallan), Principal Consultant at [Synergetic Solutions](https://synergetic.solutions)
 
 [Documentation](https://jeffallan.github.io/claude-skills/skills/language/php-pro/)
